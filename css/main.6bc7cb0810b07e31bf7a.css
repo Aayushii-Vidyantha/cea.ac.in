@@ -9108,7 +9108,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 #maincarousel {
-  height: 100vh;
+  height: 95vh;
   overflow: hidden; }
   #maincarousel .carousel-inner {
     background: #000; }
@@ -9228,7 +9228,7 @@ a.text-dark:hover, a.text-dark:focus {
       text-decoration: none;
       font-size: 0.7em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 600;
       letter-spacing: 0.1em; }
     #footer .link-holder .main-btn {
       margin-top: 20px;
@@ -9243,9 +9243,6 @@ a.text-dark:hover, a.text-dark:focus {
       padding-bottom: 8px; }
     #footer .link-holder .branch-holder :hover {
       color: #809fb7; }
-      #footer .link-holder .branch-holder :hover span {
-        padding-left: 13px;
-        transition: all 0.2s; }
     #footer .link-holder .branch-holder span {
       padding-left: 8px;
       font-size: 13px; }
@@ -9310,16 +9307,18 @@ a.text-dark:hover, a.text-dark:focus {
     display: block; }
   .navbar .navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: 500;
-    letter-spacing: 0.05em;
+    font-size: 0.7em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
     color: #fff; }
 
 .shrink {
   background: #fff;
   transition: 0.5s ease;
   margin: 0px;
-  padding-top: 10px !important; }
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0); }
   .shrink .navbar-brand {
     color: #000; }
   .shrink .navbar-nav .nav-item .nav-link {
@@ -9336,26 +9335,70 @@ a.text-dark:hover, a.text-dark:focus {
   .other-navbar .other-nav .nav-link {
     color: #000 !important; }
 
-.owl-next, .owl-prev {
+.student_carousel .owl-next, .student_carousel .owl-prev {
+  width: 100px;
+  height: 100px;
+  line-height: 40px;
+  background-color: transparent !important;
+  color: #fff !important;
+  font-size: 2.5rem !important;
+  position: absolute;
+  margin-top: -50px;
+  top: 50%;
+  transition: 0.35s; }
+  .student_carousel .owl-next:hover, .student_carousel .owl-prev:hover {
+    color: #000 !important; }
+  .student_carousel .owl-next:focus, .student_carousel .owl-prev:focus {
+    outline: none; }
+
+.student_carousel .owl-prev {
+  left: 20px; }
+
+.student_carousel .owl-next {
+  right: 20px; }
+
+.news_carousel .owl-next, .news_carousel .owl-prev {
   width: 40px;
   height: 40px;
   line-height: 40px;
   background-color: transparent !important;
-  border-radius: 50%;
   color: #fff !important;
-  font-size: 1.4rem !important;
+  font-size: 2.5rem !important;
   position: absolute;
+  margin-top: -50px;
   top: 50%;
-  border: 2px solid #fff !important;
   transition: 0.35s; }
-  .owl-next:hover, .owl-prev:hover {
-    background-color: #fff !important;
+  .news_carousel .owl-next:hover, .news_carousel .owl-prev:hover {
     color: #000 !important; }
+  .news_carousel .owl-next:focus, .news_carousel .owl-prev:focus {
+    outline: none; }
 
-.owl-prev {
+.news_carousel .owl-prev {
   left: 20px; }
 
-.owl-next {
+.news_carousel .owl-next {
+  right: 20px; }
+
+.organisation_carousel .owl-next, .organisation_carousel .owl-prev {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: transparent !important;
+  color: #fff !important;
+  font-size: 2.5rem !important;
+  position: absolute;
+  margin-top: -50px;
+  top: 50%;
+  transition: 0.35s; }
+  .organisation_carousel .owl-next:hover, .organisation_carousel .owl-prev:hover {
+    color: #000 !important; }
+  .organisation_carousel .owl-next:focus, .organisation_carousel .owl-prev:focus {
+    outline: none; }
+
+.organisation_carousel .owl-prev {
+  left: 20px; }
+
+.organisation_carousel .owl-next {
   right: 20px; }
 
 #section-01 {
@@ -9533,8 +9576,92 @@ a.text-dark:hover, a.text-dark:focus {
         background: #333333;
         color: #fff; }
 
-#section-06 .grid {
-  padding: 15px 0; }
+#section-06 .main-btn {
+  margin-top: 40px;
+  padding: 20px 40px;
+  color: #333333; }
+  #section-06 .main-btn:hover {
+    color: #fff; }
+
+#section-06 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 2em;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  display: block;
+  opacity: 0;
+  transition: 1s ease; }
+
+#section-06 .grid-1 {
+  padding: 0px 15px; }
+  #section-06 .grid-1 .img-holder {
+    background: #000;
+    overflow: hidden;
+    height: 300px; }
+    #section-06 .grid-1 .img-holder img {
+      object-fit: cover;
+      height: 100%;
+      transition: 1s ease; }
+    #section-06 .grid-1 .img-holder:hover img {
+      opacity: 0.8;
+      transform: scale(1.5);
+      transition: 1s ease; }
+    #section-06 .grid-1 .img-holder:hover .content {
+      opacity: 1;
+      transition: 1s ease; }
+  #section-06 .grid-1 .col-md-3 {
+    padding: 0; }
+
+#section-06 .grid-2 {
+  padding: 0px 15px; }
+  #section-06 .grid-2 .img-holder {
+    background: #000;
+    overflow: hidden;
+    height: 300px;
+    overflow: hidden;
+    transition: 1s ease; }
+    #section-06 .grid-2 .img-holder img {
+      max-width: 100%;
+      object-fit: cover;
+      transition: 1s ease; }
+    #section-06 .grid-2 .img-holder:hover img {
+      opacity: 0.8;
+      transform: scale(1.5);
+      transition: 1s ease; }
+    #section-06 .grid-2 .img-holder:hover .content {
+      opacity: 1;
+      transition: 1s ease; }
+  #section-06 .grid-2 .col-md-6 {
+    padding: 0; }
+
+#section-07 .head {
+  padding-bottom: 30px; }
+
+#section-07 .s-head {
+  font-size: 0.9em; }
+
+#section-07 .p-sub {
+  padding-top: 15px; }
+
+#section-07 .link {
+  font-weight: bolder; }
+
+#section-07 .main-btn {
+  background: #003688;
+  color: #fff;
+  transition: 0.5s ease;
+  border-color: #003688;
+  font-size: 0.7em;
+  padding: 20px 30px; }
+  #section-07 .main-btn:hover {
+    border-color: #333333;
+    background: #fff;
+    color: #333333; }
 
 #section-09 {
   padding-top: 80px;
@@ -9770,4 +9897,4 @@ footer {
   padding: 80px 0; }
 
 
-/*# sourceMappingURL=main.f679860db0904aeef853.css.map*/
+/*# sourceMappingURL=main.6bc7cb0810b07e31bf7a.css.map*/
