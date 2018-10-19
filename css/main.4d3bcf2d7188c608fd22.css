@@ -9166,17 +9166,22 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 800;
   font-size: 2em;
   letter-spacing: 0.1em;
-  color: #333333; }
+  color: #333333;
+  text-transform: uppercase; }
 
 .s-head {
   font-weight: 700;
   color: #333333;
   font-size: 1.1em;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
 
 .p-sub {
   font-size: 0.9em;
   line-height: 25px; }
+
+.pb-25 {
+  padding-bottom: 25px; }
 
 .pb-40 {
   padding-bottom: 40px; }
@@ -9204,14 +9209,25 @@ a.text-dark:hover, a.text-dark:focus {
   background: transparent;
   padding-left: 0; }
   .breadcrumb li {
-    color: #333; }
+    color: #333333; }
     .breadcrumb li a {
-      color: #00338d;
+      color: #003688;
       font-weight: 600;
       letter-spacing: 0; }
-    .breadcrumb li :hover {
-      color: #f6f6f7;
-      text-decoration: none; }
+      .breadcrumb li a:hover {
+        color: rgba(12, 63, 151, 0.733);
+        text-decoration: none; }
+
+.element-d {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e2e2; }
+
+.drop-head {
+  color: #333333; }
+  .drop-head:hover {
+    color: #003688;
+    text-decoration: none; }
 
 #footer {
   padding-bottom: 10px;
@@ -9295,33 +9311,75 @@ a.text-dark:hover, a.text-dark:focus {
       opacity: 0.8; }
 
 .navbar {
-  margin-top: 80px;
-  background: transparent;
-  transition: 0.5s ease; }
+  padding-bottom: 0px !important;
+  padding-top: 80px;
+  background: transparent; }
   .navbar .navbar-brand {
     color: #fff;
     font-weight: bold; }
-  .navbar .dropdown > .dropdown-toggle:active {
-    pointer-events: none; }
-  .navbar :hover > .dropdown-menu {
-    display: block; }
-  .navbar .navbar-nav .nav-item .nav-link {
-    text-transform: uppercase;
-    font-size: 0.7em;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    color: #fff; }
+  .navbar .dropdown {
+    position: static !important; }
+  .navbar .dropdown-menu {
+    transition: max-height 0.5s ease-out;
+    height: auto;
+    max-height: 600px;
+    padding: 60px 0 30px 0;
+    border-radius: 0;
+    border: none;
+    margin: 0; }
+    .navbar .dropdown-menu .m-head {
+      font-size: 1.4em;
+      padding-bottom: 10px; }
+    .navbar .dropdown-menu .element {
+      text-align: right; }
+    .navbar .dropdown-menu .dropdown-list {
+      transition: 1s ease;
+      list-style: none;
+      padding-left: 0px; }
+      .navbar .dropdown-menu .dropdown-list .dropdown-item {
+        padding: 5px 0px;
+        color: #003688;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 0.8em;
+        font-weight: 500;
+        line-height: 1.5em; }
+        .navbar .dropdown-menu .dropdown-list .dropdown-item:hover {
+          background: #fff;
+          color: rgba(12, 63, 151, 0.733); }
+  .navbar .navbar-nav .nav-item {
+    height: 100%; }
+    .navbar .navbar-nav .nav-item .nav-link {
+      text-transform: uppercase;
+      font-size: 0.7em;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      color: #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      transition: border-width 0.1s ease;
+      border-bottom: 2px solid transparent; }
+      .navbar .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: 2px solid #003688; }
+      .navbar .navbar-nav .nav-item .nav-link:focus {
+        border-bottom: 2px solid #003688; }
+
+.nav-change .navbar-brand {
+  color: #000; }
+
+.nav-change .navbar-nav .nav-item .nav-link {
+  color: #000; }
 
 .shrink {
   background: #fff;
   transition: 0.5s ease;
   margin: 0px;
   padding-top: 20px !important;
-  padding-bottom: 20px !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0); }
   .shrink .navbar-brand {
     color: #000; }
   .shrink .navbar-nav .nav-item .nav-link {
+    padding-bottom: 20px !important;
     color: #000; }
 
 .other-navbar {
@@ -9334,6 +9392,18 @@ a.text-dark:hover, a.text-dark:focus {
     color: #000 !important; }
   .other-navbar .other-nav .nav-link {
     color: #000 !important; }
+
+.nav-holder {
+  position: relative; }
+
+.overlay-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  max-height: 450px;
+  z-index: 10; }
 
 .student_carousel .owl-next, .student_carousel .owl-prev {
   width: 100px;
@@ -9897,4 +9967,4 @@ footer {
   padding: 80px 0; }
 
 
-/*# sourceMappingURL=main.6bc7cb0810b07e31bf7a.css.map*/
+/*# sourceMappingURL=main.4d3bcf2d7188c608fd22.css.map*/
