@@ -9314,6 +9314,8 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 0px !important;
   padding-top: 80px;
   background: transparent; }
+  .navbar .nav-container {
+    z-index: 10; }
   .navbar .navbar-brand {
     color: #fff;
     font-weight: bold; }
@@ -9327,6 +9329,10 @@ a.text-dark:hover, a.text-dark:focus {
     border-radius: 0;
     border: none;
     margin: 0; }
+    .navbar .dropdown-menu .dropdown-content {
+      transition: 1s opacity; }
+    .navbar .dropdown-menu .dropdown-show {
+      transition: 1s opacity; }
     .navbar .dropdown-menu .m-head {
       font-size: 1.4em;
       padding-bottom: 10px; }
@@ -9345,8 +9351,7 @@ a.text-dark:hover, a.text-dark:focus {
         font-weight: 500;
         line-height: 1.5em; }
         .navbar .dropdown-menu .dropdown-list .dropdown-item:hover {
-          background: #fff;
-          color: rgba(12, 63, 151, 0.733); }
+          background: #fff; }
   .navbar .navbar-nav .nav-item {
     height: 100%; }
     .navbar .navbar-nav .nav-item .nav-link {
@@ -9396,14 +9401,40 @@ a.text-dark:hover, a.text-dark:focus {
 .nav-holder {
   position: relative; }
 
-.overlay-nav {
-  position: absolute;
-  top: 0;
+.overlay {
+  position: fixed;
   left: 0;
+  top: 0;
   background: #fff;
   width: 100%;
-  max-height: 450px;
-  z-index: 10; }
+  z-index: 10;
+  height: 0;
+  overflow: hidden; }
+  .overlay .dropdown-content {
+    padding-top: 128px; }
+  .overlay .dropdown-content {
+    transition: 1s opacity; }
+  .overlay .dropdown-show {
+    transition: 1s opacity; }
+  .overlay .m-head {
+    font-size: 1.4em;
+    padding-bottom: 10px; }
+  .overlay .element {
+    text-align: right; }
+  .overlay .dropdown-list {
+    transition: 1s ease;
+    list-style: none;
+    padding-left: 0px; }
+    .overlay .dropdown-list .dropdown-item {
+      padding: 5px 0px;
+      color: #003688;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 0.8em;
+      font-weight: 500;
+      line-height: 1.5em; }
+      .overlay .dropdown-list .dropdown-item:hover {
+        background: #fff; }
 
 .student_carousel .owl-next, .student_carousel .owl-prev {
   width: 100px;
@@ -9967,4 +9998,4 @@ footer {
   padding: 80px 0; }
 
 
-/*# sourceMappingURL=main.4d3bcf2d7188c608fd22.css.map*/
+/*# sourceMappingURL=main.364ecd21ccee94067c32.css.map*/
