@@ -9441,6 +9441,11 @@ a.text-dark:hover, a.text-dark:focus {
     padding-bottom: 20px !important;
     color: #000; }
 
+.course-navbar {
+  background: transparent;
+  color: #000 !important;
+  padding-top: 40px; }
+
 .shrink-dropdown .dropdown-content {
   transition: 1s ease;
   padding-top: 120px !important; }
@@ -9870,72 +9875,75 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #f6f6f7;
   height: 90vh;
   color: #fff; }
-  #course-head .content-head {
-    padding-top: 60px; }
-    #course-head .content-head .m-head {
+  #course-head #course-head-holder {
+    padding-top: 40px; }
+    #course-head #course-head-holder .content-head .m-head {
       font-weight: 800;
       letter-spacing: 0;
       font-size: 3em;
       color: #fff; }
-  #course-head .content-item h4 {
-    padding-top: 20px;
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 1.2em;
-    text-align: center; }
-  @media screen and (max-width: 600px) {
-    #course-head .content-head .m-head {
-      font-size: 2em; }
-    #course-head .content-item h4 {
-      font-size: 1em; } }
-  #course-head .breadcrumbs {
-    padding-top: 200px; }
-    #course-head .breadcrumbs .w-breadcrumb {
-      padding: 10px 16px;
-      list-style: none;
+    #course-head #course-head-holder .content-item h4 {
+      padding-top: 20px;
+      font-style: italic;
+      font-weight: lighter;
+      font-size: 1.2em;
       text-align: center; }
-      #course-head .breadcrumbs .w-breadcrumb .w-breadcrumb-item {
-        display: inline;
-        font-size: 0.8em;
-        color: #fff; }
-        #course-head .breadcrumbs .w-breadcrumb .w-breadcrumb-item a {
-          font-weight: lighter;
-          color: #fff;
-          text-decoration: none;
-          transition: 0.5s ease;
-          padding-bottom: 3px;
-          border-bottom: 1.5px solid transparent; }
-          #course-head .breadcrumbs .w-breadcrumb .w-breadcrumb-item a:hover {
+    @media screen and (max-width: 600px) {
+      #course-head #course-head-holder .content-head .m-head {
+        font-size: 2em; }
+      #course-head #course-head-holder .content-item h4 {
+        font-size: 1em; } }
+    #course-head #course-head-holder .breadcrumbs {
+      padding-top: 170px; }
+      #course-head #course-head-holder .breadcrumbs .w-breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+        text-align: center; }
+        #course-head #course-head-holder .breadcrumbs .w-breadcrumb .w-breadcrumb-item {
+          display: inline;
+          font-size: 0.8em;
+          color: #fff; }
+          #course-head #course-head-holder .breadcrumbs .w-breadcrumb .w-breadcrumb-item a {
+            font-weight: lighter;
+            color: #fff;
+            text-decoration: none;
             transition: 0.5s ease;
-            border-bottom: 1.5px solid #fff; }
-        #course-head .breadcrumbs .w-breadcrumb .w-breadcrumb-item::after {
+            padding-bottom: 3px;
+            border-bottom: 1.5px solid transparent; }
+            #course-head #course-head-holder .breadcrumbs .w-breadcrumb .w-breadcrumb-item a:hover {
+              transition: 0.5s ease;
+              border-bottom: 1.5px solid #fff; }
+          #course-head #course-head-holder .breadcrumbs .w-breadcrumb .w-breadcrumb-item::after {
+            padding: 8px;
+            color: #fff;
+            content: ">"; }
+        #course-head #course-head-holder .breadcrumbs .w-breadcrumb .active a:hover {
+          cursor: default;
+          border-bottom: 1.5px solid transparent; }
+        #course-head #course-head-holder .breadcrumbs .w-breadcrumb .active::after {
           padding: 8px;
           color: #fff;
-          content: ">"; }
-      #course-head .breadcrumbs .w-breadcrumb .active a:hover {
-        cursor: default;
-        border-bottom: 1.5px solid transparent; }
-      #course-head .breadcrumbs .w-breadcrumb .active::after {
-        padding: 8px;
-        color: #fff;
-        content: ""; }
-  @media screen and (max-width: 600px) {
-    #course-head .content-head .m-head {
-      font-size: 2em; }
-    #course-head .content-item h4 {
-      font-size: 1em; }
-    #course-head .breadcrumbs {
-      padding-top: 20px; } }
-  @media screen and (max-width: 991px) {
-    #course-head .breadcrumbs {
-      padding-top: 50px; } }
+          content: ""; }
+    @media screen and (max-width: 600px) {
+      #course-head #course-head-holder .content-head .m-head {
+        font-size: 2em; }
+      #course-head #course-head-holder .content-item h4 {
+        font-size: 1em; }
+      #course-head #course-head-holder .breadcrumbs {
+        padding-top: 20px; } }
+    @media screen and (max-width: 991px) {
+      #course-head #course-head-holder .breadcrumbs {
+        padding-top: 50px; } }
 
 #section-14 {
   background: #F6F6F7;
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 30px; }
+  #section-14 .course-navs {
+    padding-top: 30px;
+    padding-bottom: 30px; }
   #section-14 .nav-tabs {
-    border: none;
-    padding-bottom: 60px; }
+    border: none; }
     #section-14 .nav-tabs .nav-item {
       padding-left: 60px;
       padding-right: 60px; }
@@ -9958,38 +9966,46 @@ a.text-dark:hover, a.text-dark:focus {
           border-bottom: 2px solid #003688; }
       #section-14 .nav-tabs .nav-item .active {
         background: transparent; }
-  #section-14 .tab-content .head-holder {
-    padding-bottom: 50px; }
-    #section-14 .tab-content .head-holder .m-head {
-      letter-spacing: 0; }
-  #section-14 .tab-content .content-holder {
-    padding-bottom: 50px; }
-    #section-14 .tab-content .content-holder .m-head {
-      font-size: 1em;
-      letter-spacing: 0; }
-    #section-14 .tab-content .content-holder .p-sub {
-      letter-spacing: 0;
-      font-size: 0.9em;
-      font-weight: 400;
-      opacity: 0.8; }
-    #section-14 .tab-content .content-holder li {
-      font-size: 0.8em;
-      font-weight: 400;
-      opacity: 0.8; }
-  #section-14 .tab-content .p-holder .p-sub {
-    letter-spacing: 0;
-    font-size: 1em;
-    font-weight: 400;
-    opacity: 0.8; }
-  #section-14 .tab-content .det-holder {
-    padding-top: 40px; }
-    #section-14 .tab-content .det-holder .m-head {
-      font-size: 1em;
-      letter-spacing: 0; }
 
-#section-15 .head-holder {
-  font-size: 2.5em;
-  padding-right: 10px; }
+#section-15 {
+  background: #fff; }
+  #section-15 .main-head .m-head {
+    padding-bottom: 10px; }
+  #section-15 .main-head .p-sub {
+    font-size: 1em; }
+  #section-15 .exp-list {
+    margin-top: 70px;
+    padding-left: 24%;
+    list-style: none;
+    counter-reset: a; }
+    #section-15 .exp-list li {
+      position: relative;
+      counter-increment: a; }
+      #section-15 .exp-list li:before {
+        position: absolute;
+        content: "0" counter(a) ". ";
+        text-align: right;
+        font-size: 5em;
+        font-weight: 800;
+        left: -170px;
+        top: -60px;
+        color: 333333;
+        width: 150px; }
+      #section-15 .exp-list li .p-sub {
+        font-size: 1em; }
+    #section-15 .exp-list .head-holder {
+      font-size: 2.5em;
+      padding-right: 10px; }
+  #section-15 .pb60 {
+    padding-bottom: 60px; }
+
+#section-16 {
+  background: #f6f6f7;
+  padding-bottom: 20px; }
+  #section-16 .main-head {
+    padding-bottom: 50px; }
+  #section-16 .program-holder {
+    padding-bottom: 40px; }
 
 #section-18 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -10091,6 +10107,37 @@ a.text-dark:hover, a.text-dark:focus {
       #section-21 .breadcrumb li :hover {
         text-decoration: underline; }
 
+#course-overview {
+  padding-top: 60px; }
+  #course-overview .head-holder {
+    padding-bottom: 50px; }
+    #course-overview .head-holder .m-head {
+      letter-spacing: 0; }
+  #course-overview .content-holder {
+    padding-bottom: 50px; }
+    #course-overview .content-holder .m-head {
+      font-size: 1em;
+      letter-spacing: 0; }
+    #course-overview .content-holder .p-sub {
+      letter-spacing: 0;
+      font-size: 0.9em;
+      font-weight: 400;
+      opacity: 0.8; }
+    #course-overview .content-holder li {
+      font-size: 0.8em;
+      font-weight: 400;
+      opacity: 0.8; }
+  #course-overview .p-holder .p-sub {
+    letter-spacing: 0;
+    font-size: 1em;
+    font-weight: 400;
+    opacity: 0.8; }
+  #course-overview .det-holder {
+    padding-top: 40px; }
+    #course-overview .det-holder .m-head {
+      font-size: 1em;
+      letter-spacing: 0; }
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #fff; }
@@ -10131,4 +10178,4 @@ footer {
   transform: translateX(4px); }
 
 
-/*# sourceMappingURL=main.1159cb8dbd3794b90c19.css.map*/
+/*# sourceMappingURL=main.668aa0c7b3e209c62461.css.map*/
